@@ -1,1 +1,2 @@
-# typs
+# typs 
+learning and practicing typescript 
