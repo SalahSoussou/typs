@@ -31,6 +31,32 @@ if (size === 's') console.log(`your size is ${Value.small}`)
 
 // ====== Type Assertions
 
-let myImg = document.getElementById('bgImg') as HTMLImageElement;
+// let myImg = <HTMLImageElement>document.getElementById('bgImg');
 // console.log(myImg.src)
+
+// Interface ================================================================
+
+interface User {
+    id: num,
+    username: str,
+    sayhello(): str
+}
+
+let user: User = {
+    id: 100,
+    username: 'salah',
+    sayhello() {
+        return `hello ${this.username}`
+    }
+}
+
+
+function userInfo(data: User) {
+    console.log(data.id)
+    console.log(data.username)
+    console.log(data.sayhello)
+}
+console.log(user)
+
+//  re-open=====
 
