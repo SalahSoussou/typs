@@ -1,14 +1,22 @@
 // Annotation With Class
 
 class cUser {
-    n: str;
-    id: num;
+    public get name(): str {
+        return this._name;
+    }
+    public set name(value: str) {
+        this._name = value;
+    }
+
     meth: () => string;
-    constructor(name: str, id: num) {
-        this.n = name,
-            this.id = id,
-            this.meth = () => `hello ${this.n} ${this.id}`
+    constructor(private _name: str, protected id: num) {
+
+        this.meth = () => `hello ${this.name} ${this.id}`
     }
 }
 
 let userOne = new cUser('salae', 345)
+
+
+console.log(userOne.meth())
+
