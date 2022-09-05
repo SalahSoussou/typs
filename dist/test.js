@@ -33,4 +33,9 @@ function userInfo(data) {
     console.log(data.sayhello);
 }
 console.log(user);
+let userex = {
+    id: 100,
+    username: 'salah',
+    role: 'seay hi'
+};
 //# sourceMappingURL=test.js.map

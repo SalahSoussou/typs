@@ -39,7 +39,7 @@ if (size === 's') console.log(`your size is ${Value.small}`)
 interface User {
     id: num,
     username: str,
-    sayhello(): str
+    sayhello?(): str
 }
 
 let user: User = {
@@ -58,5 +58,17 @@ function userInfo(data: User) {
 }
 console.log(user)
 
-//  re-open=====
+// ===re-open====33 =====
+
+// interface extend ===============
+
+interface UserExtended extends User {
+    role: str | num
+}
+
+let userex: UserExtended = {
+    id: 100,
+    username: 'salah',
+    role: 'seay hi'
+}
 
