@@ -20,5 +20,17 @@ var Value;
 let size = "s";
 if (size === 's')
     console.log(`your size is ${Value.small}`);
-let myImg = document.getElementById('bgImg');
+let user = {
+    id: 100,
+    username: 'salah',
+    sayhello() {
+        return `hello ${this.username}`;
+    }
+};
+function userInfo(data) {
+    console.log(data.id);
+    console.log(data.username);
+    console.log(data.sayhello);
+}
+console.log(user);
 //# sourceMappingURL=test.js.map

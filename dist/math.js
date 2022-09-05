@@ -49,4 +49,20 @@ function roll(btns) {
     console.log(`value: ${btns.x}`);
 }
 roll({ up: 'up', down: 'down', x: true });
+let all = 100;
+function loger(info) {
+    console.log(info.four);
+    console.log(info.tow);
+    console.log(info.three);
+    console.log(info.one);
+}
+loger({ one: 'test', tow: 23, three: false, four: true });
+let obj = {
+    id: 1223,
+    name: 'salah',
+    skils: {
+        one: 'js',
+        tow: 'ts'
+    }
+};
 //# sourceMappingURL=math.js.map

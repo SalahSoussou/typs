@@ -94,3 +94,45 @@ function roll(btns: fuulBtns) {
     console.log(`value: ${btns.x}`)
 }
 roll({ up: 'up', down: 'down', x: true })
+
+//=========================================================
+//Union and intersection
+
+let all: num | str = 100
+
+type A = {
+    one: str,
+    tow: num,
+    three: bl
+}
+type B = {
+    four: bl
+}
+
+type mix = A & B
+
+function loger(info: mix) {
+    console.log(info.four)
+    console.log(info.tow)
+    console.log(info.three)
+    console.log(info.one)
+}
+
+loger({ one: 'test', tow: 23, three: false, four: true })
+//=====================
+
+let obj: {
+    id: num,
+    name: str,
+    skils: {
+        one: str,
+        tow: str
+    }
+} = {
+    id: 1223,
+    name: 'salah',
+    skils: {
+        one: 'js',
+        tow: 'ts'
+    }
+}
